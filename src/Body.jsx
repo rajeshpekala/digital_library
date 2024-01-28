@@ -1,5 +1,6 @@
 import React from 'react'
 import BooksCards from './components/BooksCards'
+import { Link } from 'react-router-dom'
 
 
 
@@ -49,16 +50,16 @@ const Body = () => {
   }]
   console.log(books)
   return (
-    <div className =" bg-cover bg-center h-screen" style={{ backgroundImage: "url(https://r4.wallpaperflare.com/wallpaper/148/392/948/1920x1080-px-books-interior-design-interiors-knowledge-library-shelves-anime-pokemon-hd-art-wallpaper-f970182d511a9d8b26e7588f7021a6cd.jpg)" }}>
+    <Link to = "/category"> <div className =" bg-cover bg-center h-screen" style={{ backgroundImage: "url(https://r4.wallpaperflare.com/wallpaper/148/392/948/1920x1080-px-books-interior-design-interiors-knowledge-library-shelves-anime-pokemon-hd-art-wallpaper-f970182d511a9d8b26e7588f7021a6cd.jpg)" }}>
       <div className='flex flex-wrap justify-center'>
         {books.map(book => 
-       <BooksCards key={book.id} bookdata = {book}/>
+      <BooksCards key={book.id} bookdata = {book}/>
         )}
         
        
 
        </div>
-    </div>
+    </div> </Link> 
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Category = () => {
+const Novels = () => {
   return (
     <div className=''>
         <div className='flex flex-wrap'>
@@ -17,4 +17,4 @@ const Category = () => {
   )
 }
 
-export default Category
+export default Novels

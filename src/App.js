@@ -4,6 +4,7 @@ import Header from "./Header.jsx";
 import Home from "./components/Home.jsx";
 import Contact from "./components/Contact.jsx";
 import About from "./components/About.jsx";
+import Category from "./components/Category.jsx";
 
 function App() {
   return (
@@ -42,7 +43,10 @@ export const appRouter = createBrowserRouter([
     element: <About/>,
    
   },
-
+  { path :"/category",
+  element: <Category/>,
+ 
+},
 //   { path :"/restaurants/:resId",
 //   element: <RestaurantMenu/>,
 // },
